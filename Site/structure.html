@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Структура установки</title>
+    <link rel="stylesheet" href="./css/main-style.css">
+    <link rel="stylesheet" href="./css/structure.css">
+    <link rel="stylesheet" href="./css/modal.css">
+</head>
+
+<body>
+    <header style="width: 100%;" class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="theory.html" class="nav__link">Теория</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="structure.html" class="nav__link active-link">Установка</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./unity/simulator.html" class="nav__link">Симулятор</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contacts.html" class="nav__link">Контакты</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Структура кассетного магнитофона</h1>
+
+        <h2>Фотографии основных элементов</h2>
+        <div class="rakurs-box">
+            <img src="./image/genPhoto.jpg" class="zoom-img" style="width: 30%; height: 25%;"
+                alt="Фото установки - ракурс 1">
+            <img src="./image/osciPhoto.jpg" class="zoom-img" style="width: 30%; height: 25%;"
+                alt="Фото установки - ракурс 2">
+            <img src="./image/striPgoto.jpg" class="zoom-img" style="width: 30%; height: 25%;"
+                alt="Фото установки - ракурс 3">
+        </div>
+
+        <h2>Озвученная карта назначения элементов кассетного магнитофона</h2>
+        <iframe style="width: 85.3%; height: 768px" title="Map" src="./map/Proton402.html" frameborder="0"></iframe>
+
+        <h2>Анимационный ролик принципов работы кассетного магнитофона</h2>
+        <video controls>
+            <source src="./Render.mp4" type="video/mp4">
+        </video>
+
+        <h2>Список основных элементов кассетного магнитофона</h2>
+        <ul id="elements-list">
+            <li data-image="./image/динамик.jpg">Динамик</li>
+            <li data-image="./image/разъём.jpg">Разъём с кассетой</li>
+            <li data-image="./image/громкость.jpg">Громкость</li>
+            <li data-image="./image/перемотка.jpg">Перемотка</li>
+            <li data-image="./image/включение.jpg">Включение</li>
+            <li data-image="./image/крышка.jpg">Крышка</li>
+        </ul>
+
+        <div id="image-container"></div>
+        <section class="modal section container">
+            <button id="btn-open-modal">?</button>
+            <div id="wrapper-modal">
+                <div id="overlay"></div>
+
+                <div id="modal-window">
+                    <h6 class="modal-window-heading">Задайте вопрос</h6>
+                    <div class="input-modal">
+                        <input class="question" id="question" type="text" placeholder="Например, что такое звук?">
+                    </div>
+                    <div class="question-button">Узнать ответ</div>
+
+                    <div class="wrapper-answer">
+                        <h6 class="answer-heading">Ответ</h6>
+                        <div class="answer">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <script src="./js/structure.js"></script>
+    <script src="./js/knowledgeBase.js"></script>
+    <script src="./js/modal.js"></script>
+</body>
+
+</html>

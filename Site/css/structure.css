@@ -1,0 +1,118 @@
+/* structure.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+main {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#image-container {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 10px;
+  height: 330px;
+  margin-bottom: 20px;
+}
+
+main h1,
+main h2 {
+  margin-top: 20px;
+}
+
+main h2 {
+  color: #a8dadc;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+video {
+  width: 90%;
+}
+
+iframe {
+  border-radius: 10px;
+  max-width: 90%;
+}
+
+main ul {
+  display: flex;
+  width: 80vw;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  list-style: none;
+  padding-inline-start: 0;
+  margin-left: 10vw;
+  flex-wrap: wrap;
+}
+
+main li {
+  margin-bottom: 10px;
+  text-align: center;
+  width: 145px;
+}
+
+main li a {
+  color: #333333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+main li:hover {
+  color: #a8dadc;
+  cursor: pointer;
+}
+
+.rakurs-box {
+  display: flex;
+  width: 100%;
+}
+
+.zoom-img {
+  margin: 20px auto;
+  transition: transform 0.3s;
+}
+
+.structure-img {
+  margin: auto;
+  justify-content: center;
+  width: 90%;
+  border-radius: 10px;
+}
+
+.menu-btn {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  background-color: #a8dadc;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  z-index: 1000;
+}

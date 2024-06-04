@@ -1,0 +1,122 @@
+#btn-open-modal {
+  width: 50px;
+  height: 50px;
+  background-color: #a8dadc;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 100%;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  top: 90%;
+  right: 3%;
+  z-index: 100000;
+  transition: background-color 0.3s;
+}
+
+#btn-open-modal:hover {
+  background-color: #457b9d;
+}
+
+#wrapper-modal {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+#wrapper-modal.active {
+  display: block;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 9999;
+  background-color: rgba(128, 128, 128, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#overlay.active {
+  opacity: 1;
+}
+
+#modal-window {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 99999;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: auto;
+  max-height: 600px;
+  opacity: 1;
+  padding: 40px 40px;
+  padding-top: 0px;
+  background-color: #ffffff;
+  font-style: normal;
+  line-height: 1.6;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.modal-window-heading {
+  font-weight: bold;
+  font-size: 22px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  margin-bottom: 5px;
+  color: #457b9d;
+}
+
+.question {
+  width: 100%;
+  height: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 2px solid #333333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  transition: border-bottom 0.3s ease;
+}
+
+.question:focus {
+  outline: none;
+  border-bottom: 2px solid #457b9d;
+}
+
+.question-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: #a8dadc;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  padding: 10px;
+  margin-top: 25px;
+  width: 125px;
+  cursor: pointer;
+  margin: auto;
+  transition: background-color 0.3s ease;
+}
+
+.question-button:hover {
+  background-color: #457b9d;
+}
+
+.input-modal {
+  display: flex;
+  flex-direction: row;
+}
+
+#bzImage{
+  width: 100%;
+  height: 250px;
+}
